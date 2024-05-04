@@ -1,4 +1,19 @@
-.column{
-    display:flex;
+.column {
+    display: flex;
     flex-direction: column;
+    max-width: 100%;
+    max-height:100vh;
 }
+
+img{
+    width:35%;
+}
+
+.right{
+    margin-left: 20%;
+}
+
+.left{
+    margin-right: 20%;
+}
+
