@@ -3,10 +3,11 @@ import styles from "./Column.module.css";
 
 export default function Column(props) {
     const imagetype = props.content;
+    
     return (
         <div>
             {imagetype.map((image, index) => {
-                return <img src={image} />;
+                return <img key={index} className={styles.column} style={props.style} src={image} />;
             })}
         </div>
     );

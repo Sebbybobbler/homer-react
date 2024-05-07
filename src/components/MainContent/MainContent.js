@@ -9,9 +9,13 @@ const images = {
     toaster: "https://coolgifs.neocities.org/gifs/93.gif",
     bells: "https://media.tenor.com/pJCgr-KvGW8AAAAj/bells-wedding-bells.gif",
     mouth: "https://media.baamboozle.com/uploads/images/627098/1644409034_191338_gif-url.gif",
+    jesus: "https://i.pinimg.com/originals/c9/9c/98/c99c98936a66370a09589509ca274001.gif",
 };
 
 export default function MainContent(props) {
+
+
+
     return (
         <>
             <div className={`${styles.body} ${styles.column}`}>
@@ -21,7 +25,6 @@ export default function MainContent(props) {
                         images["worms"],
                         images["toaster"],
                         images["bells"],
-                        images["worms"],
                     ]}
                 />
             </div>
@@ -32,6 +35,34 @@ export default function MainContent(props) {
                         images["mouth"],
                         images["clock"],
                         images["worms"],
+                    ]}
+                />
+            </div>
+            <div className={`${styles.body} ${styles.column}`}>
+                <Column
+                    style={{ height: "150%", width: "65%" }}
+                    content={[
+                        images["empty"],
+                        images["jesus"],
+                        images["empty"],
+                    ]}
+                />
+            </div>
+            <div className={`${styles.body} ${styles.column}`}>
+                <Column
+                    content={[
+                        images["worms"],
+                        images["bells"],
+                        images["toaster"],
+                    ]}
+                />
+            </div>
+            <div className={`${styles.body} ${styles.column}`}>
+                <Column
+                    content={[
+                        images["toaster"],
+                        images["mouth"],
+                        images["clock"],
                     ]}
                 />
             </div>
